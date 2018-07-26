@@ -14,38 +14,28 @@
 	position:fixed;
 	top:0px;
 	left:0px;
-	width:80%;
-	padding:30px 10%;
+	width:90%;
+	padding:40px 5%;
 	z-index:2;
+  color:#fff;
+  transition:all .5s;
+}
+#finger_header > .header.active{
+  padding:24px 5%;
+  background:#fff;
+  color:#34363F;
 }
 /*header左边的logo*/
 .header .finger_logo{
 	float:left;
 	width:30%;
+  height:28px;
 }
-
-.header .logo_hide{
-	display:none;
-	float:left;
-	width:30%;
-	margin-left:5%;
-}
-
-.header .finger_logo > img:first-of-type{
+.header .finger_logo > img.logo{
 	height:28px;
 }
 
-.header .finger_logo > img:last-of-type{
-	height:15px;
-	margin-left:15px;
-	vertical-align:5px;
-}
-
-.header .logo_hide > img:first-of-type{
-	height:28px;
-}
-
-.header .logo_hide > img:last-of-type{
+.header .finger_logo > img.logo_text{
 	height:15px;
 	margin-left:15px;
 	vertical-align:5px;
@@ -54,20 +44,17 @@
 /*header右边的nav*/
 .header .h_nav{
 	float:right;
-	width:25%;	
+	width:30%;	
 }
-
 .header .h_nav > ul{
 }
-
 .header .h_nav > ul > li{
 	float:left;
-	margin-left:24px;
-	
+	margin-left:35px;
 }
 .header .h_nav > ul > li > a{
 	font-size:16px;
-	color:#fff;
+	color:inherit;
 }
 
 /*header下面的轮播图*/
