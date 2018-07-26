@@ -1,0 +1,769 @@
+@charset "utf-8";
+
+/* header start */
+#finger_header{
+	width:100%;
+	height:800px;
+}
+
+#finger_header .header_m{
+	overflow:hidden;
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	padding:30px 0;
+	z-index:2;
+}
+
+.header_m .header{
+	width:90%;
+	margin:0px auto;
+}
+/*header左边的logo*/
+.header .finger_logo{
+	float:left;
+	width:30%;
+	margin-left:5%;
+}
+
+.header .logo_hide{
+	display:none;
+	float:left;
+	width:30%;
+	margin-left:5%;
+}
+
+.header .finger_logo > img:first-of-type{
+	height:28px;
+}
+
+.header .finger_logo > img:last-of-type{
+	height:15px;
+	margin-left:15px;
+	vertical-align:5px;
+}
+
+.header .logo_hide > img:first-of-type{
+	height:28px;
+}
+
+.header .logo_hide > img:last-of-type{
+	height:15px;
+	margin-left:15px;
+	vertical-align:5px;
+}
+
+/*header右边的nav*/
+.header .h_nav{
+	float:right;
+	width:25%;	
+}
+
+.header .h_nav > ul{
+	overflow:hidden;
+}
+
+.header .h_nav > ul > li{
+	float:left;
+	margin-left:35px;
+	
+}
+.header .h_nav > ul > li > a{
+	font-size:16px;
+	color:#fff;
+}
+
+/*header下面的轮播图*/
+.finger_header_m{
+	position:fixed;  /*将轮播图固定*/
+	top:0px;
+	left:0px;
+	width:100%;
+}
+
+.finger_header_m .header_banner{
+	position:relative;
+	height:800px;
+}
+
+.header_banner > ul{
+	position:absolute;
+	top:0px;
+	overflow:hidden;
+	width:400%;
+	height:100%;
+}
+
+.header_banner > ul > li{
+	float:left;	
+	width:1540px;	
+	height:800px;
+	/* box-sizing:border-box; */
+}
+
+.header_banner > ul > li:nth-of-type(1){
+	background:url("../images/website-banner1.jpg") no-repeat center center;
+	background-size:cover;
+}
+.header_banner > ul > li:nth-of-type(2){
+	background:url("../images/website-banner2.jpg") no-repeat center center;
+	background-size:cover;
+}
+.header_banner > ul > li:nth-of-type(3){
+	background:url("../images/website-banner3.jpg") no-repeat center center;
+	background-size:cover;
+}
+
+/*轮播图上的各种图标*/ 
+
+.header_banner .header_info{
+	position:absolute;
+	right:100px;
+	top:680px;
+	z-index:1;
+}
+
+.header_banner .header_info img{
+	width:150px;
+	height:42px;
+	margin-left:15px;
+}
+
+.header_banner .header_info > img{
+	width:50px;
+}
+
+/*二维码隐藏起来*/
+.header_banner .header_info .hide{
+	display:none;
+	position:absolute;
+	right:-18px;
+	top:-122px;
+	z-index:1;
+}
+
+.header_banner .header_info .hide > img{
+	width:100px;
+	height:100px;
+}
+
+/* hover上去二维码出现 */
+.header_banner .header_info > img:hover + .hide{
+	display:block;
+}
+
+.header_banner > span{
+	display:block;
+	position:absolute;
+	top:50%;
+	margin-top:-23.5px;
+	width:50px;
+	height:70px;
+	z-index:2;
+	cursor:pointer;
+}
+
+/*轮播图上left按钮 */
+.header_banner .icon_prev{
+	left:60px;
+}
+
+/*轮播图上right按钮*/
+.header_banner .icon_next{
+	right:60px;
+}
+
+.header_banner .iconfont{
+	font-size:50px;
+	color:#fff;
+}
+
+/*轮播图上小方块颜色的变动*/
+.header_banner .dot{
+	position:absolute;
+	bottom:57px;
+	left:50%;
+	margin-left:-82px;
+	width:165px;
+	height:10px;
+}
+
+.header_banner .dot span{
+	display:inline-block;
+	width:39px;
+	height:10px;
+	margin:0px 5px;
+	border:1px solid #fff;
+	background:#000;
+	cursor:pointer;
+}
+
+.header_banner .dot .d_span{
+	background:#fff;
+}
+/* 效果 */
+.header_banner > span:hover{
+	background:rgba(0,0,0,.3);
+}
+/*header over*/
+
+
+/*finger main start*/
+
+#finger_main{
+	position:relative;
+	overflow:hidden;
+	width:100%;
+	background:#f7f7f7;
+}
+
+#finger_main .main{
+	width:1200px;
+	margin:0 auto;
+}
+
+/*主体的第一部分*/
+#finger_main .main > h1{
+	margin:100px 0 20px 0;
+	text-align:center;
+	font-weight:normal;
+}
+
+#finger_main .main > p{
+	text-align:center;
+	font-size:18px;
+	margin-bottom:20px;
+}
+
+#finger_main .main > ul{
+	overflow:hidden;
+}
+
+#finger_main .main > ul > li{
+	position:relative;
+	float:left;
+	width:220px;
+	height:330px;
+	background:#fff;
+	margin-right:25px;
+	
+}
+
+#finger_main .main > ul > li:last-of-type{
+	margin-right:0px;
+}
+
+.main > ul > li > span{
+	display:block;
+	width:80px;
+	height:80px;
+	background:#e5343e;
+	margin:50px 70px 0 70px;
+	border-radius:50%;
+}
+
+.main > ul > li > .iconfont{
+	font-size:50px;
+	text-align:center;
+	line-height:80px;
+	color:#fff;
+}
+
+.main > ul > li > p{
+	text-align:center;
+	margin-top:20px;
+	
+}
+
+.main > ul > li > p:first-of-type{
+	font-size:18px;
+	font-weight:600px;
+}
+
+.main > ul > li > p:last-of-type{
+	color:#aaa;
+	padding:0px 15px;
+}
+
+.main > ul > li .finger_live{
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	width:100%;
+	height:5px;
+	background:#e5343e;
+}
+
+/*被隐藏起来hover一下就出现*/
+.main > ul > li:hover .m_hide{
+	height:332px;   /*刚开始设置高度为0*/
+	transition:all 0.3s ease;
+} 
+
+/*开始被隐藏起来*/
+.main .m_hide{
+	overflow:hidden;
+	position:absolute;
+	bottom:5px;
+	left:0px;
+	width:100%;
+	height:0px;
+	background:rgb(229,52,62);
+}
+
+.m_hide > span{
+	display:block;
+	width:80px;
+	height:80px;
+	background:#fff;
+	margin:50px 70px 0 70px;
+	border-radius:50%;
+}
+
+.m_hide  > .iconfont{
+	font-size:50px;
+	text-align:center;
+	line-height:80px;
+	color:rgb(229,52,62);
+}
+
+.m_hide > p{
+	text-align:center;
+	margin-top:20px;
+	color:#fff;
+}
+
+.m_hide > p:first-of-type{
+	font-size:18px;
+	font-weight:600px;
+}
+
+.m_hide > p:last-of-type{
+	padding:0px 15px;
+}
+
+/*主体的第二部分：讲师案例*/
+#finger_main .finger_case{
+	overflow:hidden;
+	width:100%;
+	height:420px;
+	margin-top:70px;
+	padding:71px 0 67px;
+	background:url('../images/website-recruit-bg.jpg') repeat-y 0px -521.4px;
+	background-size:cover;
+	color:#fff;
+}
+
+.finger_case > h1{
+	text-align:center;
+}
+
+.finger_case > p{
+	margin-top:20px;
+	margin-bottom:20px;
+	font-size:18px;
+	text-align:center;
+}
+
+.finger_case > ul{
+	overflow:hidden;
+	padding-left:180px;
+}
+.finger_case > ul > li{
+	float:left;
+	width:200px;
+}
+
+.finger_case > ul > li > img{
+	display:block;
+	width:100%;
+	border-radius:50%;
+	transform:scale(0.6);
+}
+.finger_case > ul > li > p{
+	font-size:16px;
+	text-align:center;
+}
+.finger_case > ul > li > p:last-of-type{
+	font-size:13px;
+}
+
+.finger_case > span{
+	display:block;
+	width:200px;
+	height:42px;
+	margin:80px auto;
+	background:#e5343e;
+	border-radius:60px;
+	line-height:42px;
+	color:#fff;
+	font-size:18px;
+	text-align:center;
+}
+
+/*主体的第三部分:精品视频课程*/
+.finger_pgc{
+	width:100%;
+	padding-top:90px;
+	background:#f7f7f7;
+}
+
+.finger_pgc > h1{
+	font-weight:500px;
+	text-align:center;
+}
+
+.finger_pgc > p{
+	text-align:center;
+	font-size:16px;
+	margin-bottom:160px;
+	margin-top:15px;
+}
+
+.finger_pgc .finger_container{
+
+	width:100%;
+	height:640px;
+	background:url("../images/website-pgc-bg.jpg") no-repeat center center;
+	background-size:cover;
+}
+
+.finger_course > ul{	
+	position:relative;
+	top:-94px;
+	overflow:hidden;
+	width:1250px;
+	margin:0px auto;
+}
+
+.finger_course > ul > li{
+	float:left;
+	width:400px;
+	height:300px;
+	padding:20px 0 0 10px;
+	box-shadow:0px 0px 3px 3px #aaa;
+	margin-left:3px;
+	transition-duration:10s;
+	transition-timing-function:linear;
+}
+
+.finger_course > ul > li > a{
+	display:inline-block;
+	color:#fff;
+}
+
+.finger_course > ul > li > a > h1{
+	font-size:22px;
+}
+
+.finger_course > ul > li > a > h2{
+	font-weight:normal;
+}
+
+.finger_course > ul > li > a > h3{
+	display:inline-block;
+	height:28px;
+	margin-top:130px;
+	font-size:20px;
+	background:#000;
+	line-height:28px;
+	padding:5px;
+}
+
+.finger_course > ul > li > a > p{
+	font-size:18px;
+}
+.finger_course > ul > li > a > h3 span:first-of-type{
+	margin-right:8px;
+	color:#3ea9be;
+}
+
+.finger_course > ul > li:nth-of-type(1){
+	background:url("../images/website-course1.jpg") no-repeat center center;
+	background-size:cover;
+}
+
+.finger_course > ul > li:nth-of-type(2){
+	background:url("../images/website-course2.jpg") no-repeat center center;
+	background-size:cover;
+}
+
+.finger_course > ul > li:nth-of-type(2) h3{
+	margin-top:160px;
+}
+.finger_course > ul > li:nth-of-type(3){
+	background:url("../images/website-course3.jpg") no-repeat center center;
+	background-size:cover;
+}
+
+.finger_course > ul > li:hover{
+	background-size:110% 105%;
+	
+}
+
+/*时间训练*/
+.finger_stytime{
+	overflow:hidden;
+	width:1250px;
+	margin:30px auto;
+}
+
+.finger_stytime .left_time{
+	float:left;
+	width:40%;
+	height:250px;
+	
+}
+
+.finger_stytime .left_time > h1{
+	color:rgba(255, 255, 255, 0.3);
+	border-left:8px solid red;
+	border-right:8px solid red;
+	font-size:20px;
+	padding-left:50px;
+}
+
+.finger_stytime .left_time .info{
+	padding-left:50px;
+}
+
+.finger_stytime .left_time .info > p{
+	font-weight:bold;
+	color:#fff;
+}
+.finger_stytime .left_time .info > p > span{
+	font-size:50px;
+}
+
+.finger_stytime .left_time .info .point {
+	float:left;
+	width:80px;
+	margin-top:30px;
+}
+
+.finger_stytime .left_time .info div > span{
+	font-size:30px;
+	color:#fff;
+}
+.finger_stytime .left_time .info div > h2{
+	text-align:center;
+	color:rgba(255, 255, 255, 0.3);
+}
+
+.finger_stytime .left_time .info .date {
+	float:left;
+	width:85px;
+	margin-top:30px;
+	margin:30px 76px 0 50px;
+	color:#fff;
+}
+
+.finger_stytime .right_time{
+	float:right;
+	width:60%;
+	height:250px;
+}
+
+.finger_stytime .right_time h1{
+	font-size:20px;
+	padding-left:50px;
+	color:rgba(255, 255, 255, 0.3);
+}
+
+
+.finger_stytime .right_time .study div{
+	position:relative;
+	height:20px;
+	margin-bottom:20px;
+	background:#e54e5c;
+}
+
+.finger_stytime .right_time .study div span{
+	position:absolute;
+	left:-50px;
+	display:inline-block;
+	height:20px;
+	color:#969696;
+	
+}
+
+.finger_stytime .right_time .study div:nth-of-type(1){
+	width:150px;
+	left:600px;
+}
+.finger_stytime .right_time .study div:nth-of-type(2){
+	width:200px;
+	left:550px;
+}
+.finger_stytime .right_time .study div:nth-of-type(3){
+	width:350px;
+	left:400px;
+}
+.finger_stytime .right_time .study div:nth-of-type(4){
+	width:550px;
+	left:200px;
+}
+.finger_stytime .right_time .study div:nth-of-type(5){
+	width:300px;
+	left:450px;
+}
+
+/*主体第四部分:定时器轮播图*/ 
+#finger_main .finger_main_banner{	
+	width:100%£»
+}
+
+.finger_main_banner > h1{
+	margin-top:120px;
+	font-weight:normal;
+	text-align:center;
+}
+
+.finger_main_banner > p{
+	margin-top:20px;
+	margin-bottom:50px;
+	font-size:18px;
+	text-align:center;
+}
+
+.main_banner{	
+	width:100%;	
+	height:700px;
+	background:url("../images/website-tool-bg.jpg") no-repeat center center;
+	background-size:cover;
+}
+
+.main_banner .banner{
+	position:relative;
+	width:100%;
+	height:100%;
+	margin:0px auto;
+}
+.banner > ul{
+	position:absolute;
+	top:0px;
+	overflow:hidden;
+	width:400%;
+	height:100%;
+}
+
+.banner > ul > li{
+	position:relative;
+	float:left;	
+	width:1540px;	
+	height:700px;
+}
+
+/*轮播图左边的图片*/
+.banner > ul > li > .pic{
+	position:absolute;
+	left:170px;
+	bottom:0px;
+	width:375px;
+	height:525px;
+}
+
+.banner > ul > li > .pic > img{
+	width:100%;
+}
+
+/*轮播图右边的内容部分*/
+.banner > ul > li > .content{
+	position:absolute;
+	top:390px;
+	left:870px;
+	color:#fff;
+}
+
+
+.banner .dot{
+	position:absolute;
+	left:870px;
+	top:343px;
+	width:93px;
+
+}
+
+.banner .dot > span{
+	display:inline-block;
+	width:15px;
+	height:15px;
+	margin-left:12px;
+	border-radius:50%;
+	background:#fff;
+}
+
+.banner .dot > span:first-of-type{
+	background:#e54e5c;
+}
+
+.banner > ul > li > .content > h1{
+	margin-bottom:30px;
+	font-size:36px;
+}
+
+.banner > ul > li > .content > h2{
+	font-size:24px;
+	font-weight:normal;
+}
+
+/* footer start */
+#finger_footer{
+	position:relative;
+	width:100%;
+	background:#f7f7f7;
+}
+
+#finger_footer .footer{
+	position:relative;
+	width:1200px;
+	margin:0px auto;
+	height:150px;
+}
+
+.footer .f_logo{
+	height:28px;
+	padding-top:70px;
+}
+
+.footer .f_logo > img{
+	height:100%;
+}
+
+.footer .f_title{
+	overflow:hidden;
+	height:18px;
+	margin:30px 0;
+}
+
+.footer .f_title > img{
+	float:left;
+	height:100%;
+}
+
+.footer .f_title .icon{
+	float:right;
+}
+
+.footer .f_title .icon > a{
+	margin-left:50px;
+}
+
+.footer .hide{
+	display:none;
+	position:absolute;
+	top:15px;
+	right:70px;
+}
+
+.copyright{
+	width:100%;
+	padding-top:80px;
+	padding-bottom:50px;
+	margin-top:30px;
+	background:#1c1c1c;
+	text-align:center;
+	color:#6f6f6f;
+	font-size:12px;
+}
