@@ -24,6 +24,7 @@
   padding:24px 5%;
   background:#fff;
   color:#34363F;
+  box-shadow: 0 0 3px 3px rgba(0,0,0,.2);
 }
 /*header左边的logo*/
 .header .finger_logo{
@@ -71,11 +72,12 @@
 
 .header_banner > ul.slideBox{
   transition:transform .5s;
+  width:300%;
+  display:flex;
 }
 
 .header_banner > ul > li{
-	float:left;	
-	width:100%;	
+  width:100%;
 	height:100vh;
 }
 
@@ -126,7 +128,7 @@
 }
 
 /* hover上去二维码出现 */
-.header_banner .header_info > img:hover + .hide{
+.header_banner .header_info > a:hover + .hide{
 	display:block;
 }
 
@@ -157,7 +159,7 @@
 }
 
 /*轮播图上小方块颜色的变动*/
-.header_banner .dot{
+.header_banner .dots{
 	position:absolute;
 	bottom:57px;
 	left:50%;
@@ -166,7 +168,7 @@
 	height:10px;
 }
 
-.header_banner .dot span{
+.header_banner .dots > span.dotsBtn{
 	display:inline-block;
 	width:39px;
 	height:10px;
@@ -176,7 +178,7 @@
 	cursor:pointer;
 }
 
-.header_banner .dot .d_span{
+.header_banner .dots > span.dotsBtn.active{
 	background:#fff;
 }
 /* 效果 */
