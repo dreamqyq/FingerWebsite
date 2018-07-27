@@ -16,7 +16,7 @@
 	left:0px;
 	width:90%;
 	padding:40px 5%;
-	z-index:2;
+	z-index:3;
   color:#fff;
   transition:all .5s;
 }
@@ -95,24 +95,20 @@
 }
 
 /*轮播图上的各种图标*/ 
-
 .header_banner .header_info{
 	position:absolute;
 	right:100px;
 	bottom:45px;
 	z-index:1;
 }
-
 .header_banner .header_info > a > img{
 	width:150px;
 	height:42px;
 	margin-left:15px;
 }
-
 .header_banner .header_info > a.QRCode > img{
 	width:50px;
 }
-
 /*二维码隐藏起来*/
 .header_banner .header_info .hide{
 	display:none;
@@ -121,17 +117,14 @@
 	top:-122px;
 	z-index:1;
 }
-
 .header_banner .header_info .hide > img{
 	width:100px;
 	height:100px;
 }
-
 /* hover上去二维码出现 */
 .header_banner .header_info > a:hover + .hide{
 	display:block;
 }
-
 .header_banner > span.iconfont{
 	display:block;
 	position:absolute;
@@ -181,7 +174,6 @@
 .header_banner .dots > span.dotsBtn.active{
 	background:#fff;
 }
-/* 效果 */
 .header_banner > span.iconfont:hover{
   background:rgba(0,0,0,.3);
 }
@@ -250,7 +242,6 @@
 
 .main > ul > li > p{
 	text-align:center;
-	/* margin-top:20px; */
   position:absolute;
   width:100%;
   z-index:2;
@@ -283,7 +274,6 @@
 /*produceList active style  */
 
 .main > ul.productList > li.active{
-  /* background:#242424; */
 }
 .main > ul.productList > li.active > span.iconfont{
 	background:#fff;
@@ -300,9 +290,8 @@
 
 /*主体的第二部分：讲师案例*/
 #finger_main .finger_case{
-	overflow:hidden;
 	width:100%;
-	height:420px;
+	height:520px;
 	margin-top:70px;
 	padding:71px 0 67px;
 	background:url('../images/website-recruit-bg.jpg') repeat-y 0px -521.4px;
@@ -315,40 +304,89 @@
 }
 
 .finger_case > p{
-	margin-top:20px;
-	margin-bottom:20px;
+  margin:20px 0 30px;
 	font-size:18px;
 	text-align:center;
 }
 
 .finger_case > ul{
-	overflow:hidden;
-	padding-left:180px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
 }
 .finger_case > ul > li{
-	float:left;
-	width:200px;
+	width:182px;
+  margin:0 1%;
 }
 
-.finger_case > ul > li > img{
-	display:block;
-	width:100%;
-	border-radius:50%;
-	transform:scale(0.6);
+.finger_case > ul > li > .teacherBox{
+  position:relative;
 }
-.finger_case > ul > li > p{
+.finger_case > ul > li > .teacherBox > .teacherTop{
+  width:100%;
+  height:249px;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:2;
+  transition:all .4s;
+}
+.finger_case > ul > li.active > .teacherBox > .teacherTop{
+  background:rgba(255,0,0,.5);
+}
+.finger_case > ul > li > .teacherBox > img{
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:1;
+	display:block;
+  height:249px;
+  width:182px;
+}
+.finger_case > ul > li > .teacherBox > .teacherIntro {
+  position:absolute;
+  z-index:2;
+  top:267px;
+  width:100%;
+  transition:all .4s;
+}
+.finger_case > ul > li.active > .teacherBox > .teacherIntro{
+  color:#fff;
+  transform:translateY(-199px);
+  font-weight:bold;
+}
+.finger_case > ul > li > .teacherBox > .teacherIntro > p{
 	font-size:16px;
 	text-align:center;
 }
-.finger_case > ul > li > p:last-of-type{
+.finger_case > ul > li > .teacherBox > .teacherIntro > p:first-of-type{
+  margin-bottom:5px;
+}
+.finger_case > ul > li > .teacherBox > .teacherIntro > p:last-of-type{
 	font-size:13px;
+}
+.finger_case > ul > li > .teacherBox > .teacherMore{
+  font-size:12px;
+  position:absolute;
+  top:210px;
+  width:100%;
+  padding-bottom:10px;
+  border-bottom:1px solid red;
+  text-align:center;
+  opacity:0;
+  transition:all .4s;
+  z-index:0;
+}
+.finger_case > ul > li.active > .teacherBox > .teacherMore{
+  transform:translateY(56px);
+  opacity:1;
 }
 
 .finger_case > span{
 	display:block;
 	width:200px;
 	height:42px;
-	margin:80px auto;
+	margin:360px auto 70px;
 	background:#e5343e;
 	border-radius:60px;
 	line-height:42px;
