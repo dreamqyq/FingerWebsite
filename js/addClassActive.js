@@ -1,5 +1,7 @@
 !function(){
-  let view = document.querySelectorAll('.teacherList > li')
+  let view_productList = document.querySelectorAll('.productList > li')
+  let view_teacherList = document.querySelectorAll('.teacherList > li')
+  let view_courseList = document.querySelectorAll('.courseList > li')
   let controller = {
     view : null,
     init : function(view){
@@ -18,5 +20,7 @@
       }
     }
   }
-  controller.init(view)
+  controller.init(view_productList)
+  controller.init(view_teacherList)
+  controller.init(view_courseList)
 }.call()
