@@ -20,7 +20,10 @@
       }
     }
   }
+  // change active class to product list
   controller.init(view_productList)
+  // change active class to teacher list
   controller.init(view_teacherList)
+  // change active class to course list
   controller.init(view_courseList)
 }.call()

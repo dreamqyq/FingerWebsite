@@ -1,17 +1,11 @@
 	var img_w = $('.banner>ul>li').width();
 	var img_len = $('.banner>ul>li').length;
 	var number = 0;
-
-
 	setInterval(AutoPlay, 2000);
-
-
 	$('.banner>.dot>span').click(function() {
 	  number = $(this).index();
 	  placePlay();
 	});
-
-
 	$('.icon > .first').mouseenter(function() {
 	  $('.footer > .hide').css("display", "block");
 	});
@@ -19,8 +13,6 @@
 	$('.icon > .first').mouseleave(function() {
 	  $('.footer > .hide').css("display", "none");
 	});
-
-
   // some function
 	function play() {
 	  var img_i = num * -img_width + "px";

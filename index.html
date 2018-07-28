@@ -19,7 +19,7 @@
 				<!-- header右边的nav -->
 				<div class="h_nav">
 					<ul class="clearfix">
-						<li><a href="#">首页</a></li>
+						<li><a href="./index.html">首页</a></li>
 						<li><a href="#">关于我们</a></li>
 						<li><a href="#">加入我们</a></li>
 						<li><a href="#">登录</a></li>
@@ -251,25 +251,45 @@
 					<div class="left_time">
 						<h1>学习时长</h1>
 						<div class="info">
-							<p><span>14,589</span>&nbsp;&nbsp;min</p>
+							<p><span id="learnTime" data-value="14589">0</span>&nbsp;&nbsp;min</p>
 							<div class="point">
 								<h2>影响力</h2>
-								<span>8,120</span>
+								<span id="influence" data-value="8120">0</span>
 							</div>
 							<div class="date">
 								<h2>累计学习</h2>
-								<span>54</span>&nbsp;&nbsp;day
+								<span id="amountTime" data-value="54">0</span>&nbsp;&nbsp;days
 							</div>
 						</div>
 					</div>
 					<div class="right_time">
 						<h1>最近学习时间</h1>
 						<div class="study">
-							<div><span>20min</span></div>	
-							<div><span>30min</span></div>	
-							<div><span>60min</span></div>
-							<div><span>90min</span></div>
-							<div><span>50min</span></div>
+							<div class="timeBar">
+                <div class="timeBar-inner">
+                  <span>20min</span>
+                </div>
+              </div>	
+							<div class="timeBar">
+                <div class="timeBar-inner">
+                  <span>30min</span>
+                </div>
+              </div>	
+							<div class="timeBar">
+                <div class="timeBar-inner">
+                  <span>60min</span>
+                </div>
+              </div>
+							<div class="timeBar">
+                <div class="timeBar-inner">
+                  <span>90min</span>
+                </div>
+              </div>
+							<div class="timeBar">
+                <div class="timeBar-inner">
+                  <span>50min</span>
+                </div>
+              </div>
 						</div>
 					</div>
 				</div>
@@ -357,6 +377,7 @@
   <script src="./js/index.js"></script>
   <script src="./js/slideShow.js"></script>
   <script src="./js/navAnimation.js"></script>
-  <script src="./js/addClassActive.js"></script>
+  <script src="./js/changeClassActive.js"></script>
+  <script src="./js/learnTime.js"></script>
  </body>
 </html>
