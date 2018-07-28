@@ -626,7 +626,7 @@
 
 /*主体第四部分:定时器轮播图*/ 
 #finger_main .finger_main_banner{	
-	width:100%£»
+	width:100%;
 }
 
 .finger_main_banner > h1{
@@ -651,65 +651,63 @@
 
 .main_banner .banner{
 	position:relative;
-	width:100%;
+	width:1020px;
 	height:100%;
+  overflow:hidden;
 	margin:0px auto;
 }
 .banner > ul{
 	position:absolute;
 	top:0px;
-	overflow:hidden;
-	width:400%;
+  display:flex;
+	width:3060px;
 	height:100%;
+  transition:transform .5s;
 }
-
 .banner > ul > li{
 	position:relative;
 	float:left;	
-	width:1540px;	
+	width:1020px;	
 	height:700px;
 }
-
 /*轮播图左边的图片*/
 .banner > ul > li > .pic{
 	position:absolute;
-	left:170px;
+	left:0;
 	bottom:0px;
 	width:375px;
 	height:525px;
 }
-
 .banner > ul > li > .pic > img{
 	width:100%;
 }
-
 /*轮播图右边的内容部分*/
 .banner > ul > li > .content{
 	position:absolute;
 	top:390px;
-	left:870px;
+	left:700px;
 	color:#fff;
 }
 
 
-.banner .dot{
+.banner .dots{
 	position:absolute;
-	left:870px;
+	left:700px;
 	top:343px;
 	width:93px;
-
+  display:flex;
 }
 
-.banner .dot > span{
-	display:inline-block;
+.banner .dots > span{
 	width:15px;
 	height:15px;
 	margin-left:12px;
 	border-radius:50%;
 	background:#fff;
+  cursor:pointer;
 }
 
-.banner .dot > span:first-of-type{
+.banner .dots > span.active{
 	background:#e54e5c;
 }
 

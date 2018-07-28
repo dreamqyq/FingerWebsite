@@ -1,11 +1,9 @@
 !function(){
-  let $view = $('.header_banner')
+  let $bottom_view = $('.main_banner > .banner')
   let controller = {
     view : null,
     slideBox : null,
     size : null,
-    prevBtn : null,
-    nextBtn : null,
     dotsBtn : null,
     index : 0,
     width : null,
@@ -13,8 +11,6 @@
       this.view = view
       this.slideBox = this.view.children('.slideBox').eq(0)
       this.dotsBtn = this.view.children('.dots').children()
-      this.prevBtn = this.view.children('.icon_prev')
-      this.nextBtn = this.view.children('.icon_next')
       this.width = view.width()
       this.size = this.dotsBtn.length
       this.bindEvent()
@@ -44,12 +40,6 @@
       this.index = index
     },
     btnClick : function(){
-      this.nextBtn.on('click',() => {
-        this.changePic(this.index + 1)
-      })
-      this.prevBtn.on('click',() => {
-        this.changePic(this.index - 1)
-      })
       this.dotsBtn.on('click',(e) => {
         let index = $(e.currentTarget).index()
         this.changePic(index)
@@ -64,5 +54,6 @@
       return index
     }
   }
-  controller.init($view)
+  controller.init($bottom_view)
 }.call()
+
