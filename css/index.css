@@ -1,4 +1,7 @@
 @charset "utf-8";
+body{
+  min-width:855px;
+}
 .clearfix::after{
   content:'';
   display:block;
@@ -9,7 +12,6 @@
 	width:100%;
 	height:100vh;
 }
-
 #finger_header > .header{
 	position:fixed;
 	top:0px;
@@ -35,19 +37,15 @@
 .header .finger_logo > img.logo{
 	height:28px;
 }
-
 .header .finger_logo > img.logo_text{
 	height:15px;
 	margin-left:15px;
 	vertical-align:5px;
 }
-
 /*header右边的nav*/
 .header .h_nav{
 	float:right;
   line-height:28px;
-}
-.header .h_nav > ul{
 }
 .header .h_nav > ul > li{
 	float:left;
@@ -63,7 +61,6 @@
 .header .h_nav > ul > li > a:hover{
   color:red;
 }
-
 .header_banner{
 	position:fixed;  
 	top:0px;
@@ -72,18 +69,15 @@
 	width:100%;
   overflow:hidden;
 }
-
 .header_banner > ul.slideBox{
   transition:transform .5s;
   width:300%;
   display:flex;
 }
-
 .header_banner > ul > li{
   width:100%;
 	height:100vh;
 }
-
 .header_banner > ul > li:nth-of-type(1){
 	background:url("../images/website-banner1.jpg") no-repeat center;
 	background-size:cover;
@@ -143,17 +137,14 @@
 .header_banner .icon_prev{
 	left:60px;
 }
-
 /*轮播图上right按钮*/
 .header_banner .icon_next{
 	right:60px;
 }
-
 .header_banner .iconfont{
 	font-size:50px;
 	color:#fff;
 }
-
 /*轮播图上小方块颜色的变动*/
 .header_banner .dots{
 	position:absolute;
@@ -163,7 +154,6 @@
 	width:165px;
 	height:10px;
 }
-
 .header_banner .dots > span.dotsBtn{
 	display:inline-block;
 	width:39px;
@@ -173,7 +163,6 @@
 	background:#000;
 	cursor:pointer;
 }
-
 .header_banner .dots > span.dotsBtn.active{
 	background:#fff;
 }
@@ -181,19 +170,12 @@
   background:rgba(0,0,0,.3);
 }
 
-
 /*finger main start*/
-
 #finger_main{
 	position:relative;
 	overflow:hidden;
 	width:100%;
 	background:#f7f7f7;
-}
-
-.main{
-	width:1200px;
-	margin:0 auto;
 }
 
 /*主体的第一部分*/
@@ -202,31 +184,27 @@
 	text-align:center;
 	font-weight:normal;
 }
-
 .main > p{
 	text-align:center;
 	font-size:18px;
 	margin-bottom:20px;
 }
-
 .main > ul.productList{
   margin-top:80px;
-  
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
 }
-
 .main > ul.productList > li{
   position:relative;
-	float:left;
 	width:220px;
 	height:330px;
 	background:#fff;
-	margin-right:25px;
+  margin:20px 15px;
 }
-
 .main > ul > li:last-of-type{
 	margin-right:0px;
 }
-
 .main > ul > li > span.iconfont{
   position:absolute;
   top:50px;
@@ -242,20 +220,17 @@
 	color:#fff;
   z-index:2;
 }
-
 .main > ul > li > p{
 	text-align:center;
   position:absolute;
   width:100%;
   z-index:2;
 }
-
 .main > ul > li > p:first-of-type{
 	font-size:20px;
 	font-weight:800;
   top:150px;
 }
-
 .main > ul > li > p:last-of-type{
 	color:#242424;
   font-weight:100;
@@ -263,7 +238,6 @@
 	padding:0px 15px;
   top:200px;
 }
-
 .main > ul > li > .finger_live{
   position:absolute;
   left:0px;
@@ -275,7 +249,6 @@
 }
 
 /*produceList active style  */
-
 .main > ul.productList > li.active{
 }
 .main > ul.productList > li.active > span.iconfont{
@@ -290,28 +263,22 @@
   height:330px;  
 }
 
-
 /*主体的第二部分：讲师案例*/
 #finger_main .finger_case{
-	width:100%;
-	height:520px;
 	margin-top:70px;
 	padding:71px 0 67px;
 	background:url('../images/website-recruit-bg.jpg') repeat-y 0px -521.4px;
 	background-size:cover;
 	color:#fff;
 }
-
 .finger_case > h1{
 	text-align:center;
 }
-
 .finger_case > p{
   margin:20px 0 30px;
 	font-size:18px;
 	text-align:center;
 }
-
 .finger_case > ul{
   display:flex;
   flex-wrap:wrap;
@@ -319,9 +286,8 @@
 }
 .finger_case > ul > li{
 	width:182px;
-  margin:0 1%;
+  margin:50px 1%;
 }
-
 .finger_case > ul > li > .teacherBox{
   position:relative;
 }
@@ -331,24 +297,20 @@
   position:absolute;
   top:0;
   left:0;
-  z-index:2;
+  z-index:1;
   transition:all .4s;
 }
 .finger_case > ul > li.active > .teacherBox > .teacherTop{
   background:rgba(255,0,0,.5);
 }
 .finger_case > ul > li > .teacherBox > img{
-  position:absolute;
-  top:0;
-  left:0;
-  z-index:1;
 	display:block;
   height:249px;
   width:182px;
 }
 .finger_case > ul > li > .teacherBox > .teacherIntro {
   position:absolute;
-  z-index:2;
+  z-index:1;
   top:267px;
   width:100%;
   transition:all .4s;
@@ -378,18 +340,16 @@
   text-align:center;
   opacity:0;
   transition:all .4s;
-  z-index:0;
 }
 .finger_case > ul > li.active > .teacherBox > .teacherMore{
   transform:translateY(56px);
   opacity:1;
 }
-
 .finger_case > span{
 	display:block;
 	width:200px;
 	height:42px;
-	margin:360px auto 70px;
+	margin:60px auto 0;
 	background:#e5343e;
 	border-radius:60px;
 	line-height:42px;
@@ -405,24 +365,19 @@
 	padding-top:90px;
 	background:#f7f7f7;
 }
-
 .finger_pgc > h1{
 	font-weight:500px;
 	text-align:center;
 }
-
 .finger_pgc > p{
 	text-align:center;
 	font-size:16px;
 	margin-bottom:160px;
 	margin-top:15px;
 }
-
 .finger_pgc .finger_container{
-
 	width:100%;
-	height:640px;
-	background:url("../images/website-pgc-bg.jpg") no-repeat center center;
+	background:url("../images/website-pgc-bg.jpg") repeat-y center center;
 	background-size:cover;
 }
 .finger_course{
@@ -435,7 +390,6 @@
   flex-wrap:wrap;
   transform:translateY(-125px);
 }
-
 .finger_course > ul > li{
 	width:420px;
 	height:310px;
@@ -445,7 +399,6 @@
   transition:all .3s;
   position:relative;
 }
-
 .finger_course > ul > li > a{
   position:absolute;
 	display:inline-block;
@@ -453,15 +406,12 @@
   z-index:1;
   margin:10px 5px;
 }
-
 .finger_course > ul > li > a > h1{
 	font-size:22px;
 }
-
 .finger_course > ul > li > a > h2{
 	font-weight:normal;
 }
-
 .finger_course > ul > li > a > h3{
 	display:inline-block;
 	height:28px;
@@ -471,7 +421,6 @@
 	line-height:28px;
 	padding:5px;
 }
-
 .finger_course > ul > li > a > p{
 	font-size:18px;
 }
@@ -509,18 +458,15 @@
 
 /*时间训练*/
 .finger_stytime{
-	overflow:hidden;
-	width:1250px;
+  width:90%;
+  height:270px;
 	margin:-20px auto 0;
 }
-
 .finger_stytime .left_time{
 	float:left;
 	width:40%;
 	height:250px;
-	
 }
-
 .finger_stytime .left_time > h1{
 	color:rgba(255, 255, 255, 0.3);
 	border-left:8px solid red;
@@ -528,11 +474,9 @@
 	font-size:20px;
 	padding-left:50px;
 }
-
 .finger_stytime .left_time .info{
 	padding-left:50px;
 }
-
 .finger_stytime .left_time .info > p{
 	font-weight:bold;
 	color:#fff;
@@ -540,13 +484,11 @@
 .finger_stytime .left_time .info > p > span{
 	font-size:50px;
 }
-
 .finger_stytime .left_time .info .point {
 	float:left;
 	width:80px;
 	margin-top:30px;
 }
-
 .finger_stytime .left_time .info div > span{
 	font-size:30px;
 	color:#fff;
@@ -555,7 +497,6 @@
 	text-align:center;
 	color:rgba(255, 255, 255, 0.3);
 }
-
 .finger_stytime .left_time .info .date {
 	float:left;
 	width:85px;
@@ -563,13 +504,11 @@
 	margin:30px 76px 0 50px;
 	color:#fff;
 }
-
 .finger_stytime .right_time{
 	float:right;
 	width:60%;
 	height:250px;
 }
-
 .finger_stytime .right_time h1{
 	font-size:20px;
 	padding-left:50px;
@@ -598,7 +537,6 @@
 .finger_stytime.offset .right_time .study > .timeBar > .timeBar-inner{
   transform:translateX(0);
 }
-
 .finger_stytime .right_time .study > .timeBar > .timeBar-inner > span{
 	position:absolute;
   top:0;
@@ -606,7 +544,6 @@
 	display:inline-block;
 	height:20px;
 	color:#969696;
-	
 }
 .finger_stytime .right_time .study .timeBar:nth-of-type(1) > .timeBar-inner{
 	width:150px;
@@ -628,27 +565,23 @@
 #finger_main .finger_main_banner{	
 	width:100%;
 }
-
 .finger_main_banner > h1{
 	margin-top:120px;
 	font-weight:normal;
 	text-align:center;
 }
-
 .finger_main_banner > p{
 	margin-top:20px;
 	margin-bottom:50px;
 	font-size:18px;
 	text-align:center;
 }
-
 .main_banner{	
 	width:100%;	
 	height:700px;
 	background:url("../images/website-tool-bg.jpg") no-repeat center center;
 	background-size:cover;
 }
-
 .main_banner .banner{
 	position:relative;
 	width:1020px;
@@ -688,8 +621,6 @@
 	left:700px;
 	color:#fff;
 }
-
-
 .banner .dots{
 	position:absolute;
 	left:700px;
@@ -697,7 +628,6 @@
 	width:93px;
   display:flex;
 }
-
 .banner .dots > span{
 	width:15px;
 	height:15px;
@@ -706,16 +636,13 @@
 	background:#fff;
   cursor:pointer;
 }
-
 .banner .dots > span.active{
 	background:#e54e5c;
 }
-
 .banner > ul > li > .content > h1{
 	margin-bottom:30px;
 	font-size:36px;
 }
-
 .banner > ul > li > .content > h2{
 	font-size:24px;
 	font-weight:normal;
@@ -723,57 +650,50 @@
 
 /* footer start */
 #finger_footer{
-	position:relative;
+  position:relative;
 	width:100%;
 	background:#f7f7f7;
 }
-
 #finger_footer .footer{
-	position:relative;
-	width:1200px;
-	margin:0px auto;
-	height:150px;
+  padding:70px 70px;
 }
-
 .footer .f_logo{
 	height:28px;
-	padding-top:70px;
+  margin-bottom:30px;
 }
-
 .footer .f_logo > img{
 	height:100%;
 }
-
 .footer .f_title{
-	overflow:hidden;
 	height:18px;
-	margin:30px 0;
 }
-
 .footer .f_title > img{
 	float:left;
 	height:100%;
 }
-
 .footer .f_title .icon{
 	float:right;
+	position:relative;
 }
-
 .footer .f_title .icon > a{
-	margin-left:50px;
+  display:inline-block;
+  margin:0 20px;
 }
-
+.footer > .f_title .icon > a.first{
+  position:relative;
+}
+.footer > .f_title .icon > a.first:hover .hide{
+  display:block;
+}
 .footer .hide{
 	display:none;
 	position:absolute;
-	top:15px;
-	right:70px;
+	bottom:28px;
+	left:-40px;
 }
-
 .copyright{
 	width:100%;
   padding:30px 0;
-	margin-top:30px;
 	background:#1c1c1c;
 	text-align:center;
 	color:#6f6f6f;
