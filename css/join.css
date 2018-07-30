@@ -1,0 +1,246 @@
+@charset "utf-8";
+body{
+  font-family: "微软雅黑";
+  background-color:#F5F5F5;
+  color:#333;
+  min-width:960px;
+}
+.fl{float: left;}
+.fr{float: right;}
+.headerpic{
+	width: 100%;
+	height: 100vh;
+  background:url("../images/website-join-banner.jpg") no-repeat center;
+  background-size:cover;
+}
+.mid{
+	margin:80px auto;
+}
+.aboutwork{
+	width: 80%;
+	height: auto;
+  padding:0 10%; 
+	color: black;
+}
+.aboutwork-text{ line-height: 2.38;}
+.aboutwork-text >h1{
+	font-size: 25px;
+	padding: 30px 0;
+}
+.aboutwork-text > div >p{ font-size: 16px;}
+.aboutwork-pic{
+	height: auto;
+  margin:70px 0;
+}
+.aboutwork-pic > img{
+  width:80%;
+  padding:0 10%;
+}
+.job{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.job-pic{
+	height: 330px;
+	width: 100%;
+	background: url(../images/website-join-recruit.jpg) no-repeat center center;
+	margin-top: 100px;
+}
+.job-kind-menu{
+	height: 40px;
+  margin:70px 0;
+}
+.job-kind-menu > ul{
+  margin:0 auto;
+  width:960px;
+}
+.job-kind-menu > ul >li{
+	font-size: 26px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin-right: 75px;
+	float: left;
+}
+.job-kind-menu > ul >li:nth-child(8){ margin-right: 0;}
+.job-kind-menu > ul > li >a{
+		cursor: pointer;
+}
+.job-kind-text{
+	width: 80%;
+	height: auto;
+  margin:0 auto;
+	overflow: hidden;
+
+}
+.technology,.product,.maket,.operation,.design,.sales,.teaching-research,.finance{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	float: left;
+	display: none;
+}
+.technology-requirements,.technology-responsibilities{
+	width: 45%;
+	height: auto;
+	overflow: hidden;
+	line-height: 2.38;
+	margin-top: 30px;
+}
+.technology-requirements >h2{color: red; margin-bottom: 20px;}
+.technology-responsibilities >h2{ color: red; margin-bottom: 20px;}
+.product-requirements,.product-responsibilities{
+	width: 45%;
+	height: auto;
+	overflow: hidden;
+	line-height: 2.38;
+	margin-top: 30px;
+}
+.product-requirements >h2{color: red; margin-bottom: 20px;}
+.product-responsibilities >h2{ color: red; margin-bottom: 20px;}
+.maket-requirements,.maket-responsibilities{
+	width: 45%;
+	height: auto;
+	overflow: hidden;
+	line-height: 2.38;
+	margin-top: 30px;
+}
+.maket-requirements >h2{color: red; margin-bottom: 20px;}
+.maket-responsibilities >h2{ color: red; margin-bottom: 20px;}
+.operation-requirements,.operation-responsibilities{
+	width: 45%;
+	height: auto;
+	overflow: hidden;
+	line-height: 2.38;
+	margin-top: 30px;
+}
+.operation-requirements >h2{color: red; margin-bottom: 20px;}
+.operation-responsibilities >h2{ color: red; margin-bottom: 20px;}
+.design-requirements,.design-responsibilities{
+	width: 45%;
+	height: auto;
+	overflow: hidden;
+	line-height: 2.38;
+	margin-top: 30px;
+}
+.design-requirements >h2{color: red; margin-bottom: 20px;}
+.design-responsibilities >h2{ color: red; margin-bottom: 20px;}
+.sales-requirements,.sales-responsibilities{
+	width: 45%;
+	height: auto;
+	overflow: hidden;
+	line-height: 2.38;
+	margin-top: 30px;
+}
+.sales-requirements >h2{color: red; margin-bottom: 20px;}
+.sales-responsibilities >h2{ color: red; margin-bottom: 20px;}
+.teaching-research-requirements,.teaching-research-responsibilities{
+	width: 45%;
+	height: auto;
+	overflow: hidden;
+	line-height: 2.38;
+	margin-top: 30px;
+}
+.teaching-research-requirements >h2{color: red; margin-bottom: 20px;}
+.teaching-research-responsibilities >h2{ color: red; margin-bottom: 20px;}
+.finance-requirements,.finance-responsibilities{
+	width: 45%;
+	height: auto;
+	overflow: hidden;
+	line-height: 2.38;
+	margin-top: 30px;
+}
+.finance-requirements >h2{color: red; margin-bottom: 20px;}
+.finance-responsibilities >h2{ color: red; margin-bottom: 20px;}
+
+/* .foot{ */
+/*   margin-top: 80px; */
+/*   width: 100%; */
+/*   height: auto; */
+/*   overflow: hidden; */
+/*   position: relative; */
+/* } */
+/* .foot-top{ */
+/*   height: 330px; */
+/*   width: 100%; */
+/*   background: url(../Images/website-join-bottom.jpg) no-repeat center center; */
+/*   margin-top: 100px; */
+/*   z-index:-1; */
+/* } */
+/* .foot-mid{ */
+/*   width: 100%; */
+/*   height: 220px; */
+/*   background-color: #f7f7f7; */
+/* } */
+/* .foot-bottom{ */
+/*   width: 100%; */
+/*   height: 80px; */
+/*   background-color: #34363F; */
+/*   text-align: center; */
+/*   line-height: 80px; */
+/*   color: #666666; */
+/* } */
+.contact-information{
+	width: 620px;
+	height: 250px;
+	line-height: 1.5;
+	font-size: 20px;
+	background-color:#e5343e;
+	position: absolute;
+	top: 0;
+	left: 130px;
+	color: white;
+}
+.contact-information >p{
+	margin-left: 65px;
+}
+.contact-information >p:first-child{
+	padding-top: 70px;
+}
+.foot-mid-child1{
+	width: 260;
+	height: auto;
+	overflow: hidden;
+	float: left;
+	margin-left: 200px;
+	margin-top: 70px;
+}
+.foot-mid1{
+	width: 130px;
+	height: 28px;
+	float: left;
+	padding-bottom: 40px;
+}
+.foot-mid2{
+	width: 260px;
+	height: 28px;
+	float: left;
+}
+.foot-mid-child2{
+	width: 500px;
+	height: 100px;
+	overflow: hidden;
+	float: right;
+	padding-top: 90px;
+	position: relative;
+}
+.foot-mid-left,.foot-mid-mid{
+	width: 35px;
+	height: 35px;
+	float: left;
+	margin-right: 70px;
+}
+.foot-mid-right{
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+.vxpic{
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	right: 420px;
+	top: 420px;
+	display: none;
+}
