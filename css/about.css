@@ -1,0 +1,160 @@
+@charset "utf-8";
+/*大图*/
+.banner {
+  width: 100%;
+  height: 100vh;
+  background:url(../images/website-about-banner.jpg) no-repeat center;
+  background-size: cover;
+}
+/*介绍*/
+.introduction {
+  margin-top: 0;
+  padding: 140px 0 194px;
+  background: #e5343e;
+  color: #fff;
+  font-size: 16px;
+  line-height: 23px;
+  display:flex;
+  justify-content:center;
+}
+.introduction .content {
+  width:85%;
+}
+.introduction .content h2 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.introduction .content .pic {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 67px;
+}
+.introduction .content .pic img {
+  display: block;
+  width: 400px;
+  height: 400px;
+}
+/*媒体新闻*/
+.news {
+  background: #f5f5f5;
+  padding: 100px 0 112px;
+  min-height: 500px;
+}
+.news .content {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.news .content img {
+  display: block;
+  width: 570px;
+  height: 400px;
+  margin-top: 68px;
+}
+.news .content .NewsContent {
+  width: 550px;
+}
+.news .content .NewsContent h1 {
+  color: #242424;
+  line-height: 32px;
+  font-size: 24px;
+  margin-bottom: 35px;
+}
+.news .content .NewsContent:first-child .NewsItem .NewsText {
+  display: block;
+}
+.news .content .NewsContent .NewsItem {
+  margin-bottom: 20px;
+}
+.news .content .NewsContent .NewsItem h2 {
+  background: #fff;
+  width: 100%;
+  height: 52px;
+  display: flex;
+  font-size: 16px;
+  color: #242424;
+  font-weight: normal;
+  padding-left: 15px;
+  padding-right: 22px;
+  align-items: center;
+}
+.news .content .NewsContent .NewsItem h2:before {
+  display: block;
+  width: 13px;
+  height: 7px;
+  background-size: cover;
+  position: absolute;
+  right: 20px;
+  top: 22px;
+  transition: all 0.3s ease;
+}
+.news .content .NewsContent .NewsItem .NewsText {
+  width: 483px;
+  margin-left: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  height: 0;
+}
+.news .content .NewsContent .NewsItem .NewsText p {
+  font-size: 14px;
+  color: #242424;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.news .content .NewsContent .NewsItem .NewsText a {
+  color: #e5343e;
+  font-size: 14px;
+  float: right;
+}
+.news .content .NewsContent .NewsItem .NewsText a:hover {
+  text-decoration: underline;
+}
+.news .content .NewsContent .NewsItem .NewsItemShow h2:before {
+  transform: rotate(180deg);
+}
+.news .content .NewsContent .NewsItem .NewsItemShow .NewsText {
+  margin-top: 18px;
+  height: auto;
+}
+/*联系我们*/
+.contact {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  background: url("../images/website-pgc-bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+.contact .map {
+  margin:0 auto;
+  position:relative;
+  width: 960px;
+  height: 508px;
+  background: url("../images/website-map.jpg") no-repeat center;
+  background-size: cover;
+  transform:translateX(-10%);
+}
+.contact .ContactItem {
+  width: 334px;
+  height: 380px;
+  padding-top: 40px;
+  padding-left: 5%;
+  box-sizing: border-box;
+  background: #000;
+  color: #fff;
+  position: absolute;
+  left: 84%;
+  top: 77px;
+}
+.contact .ContactItem h1 {
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 25px;
+}
+.contact .ContactItem p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 100;
+}

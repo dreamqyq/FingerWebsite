@@ -76,6 +76,5 @@ function slideShow($view){
     } 
     $dotsBtn.eq(index).addClass('active').siblings().removeClass('active')
     n = index
-    console.log(n)
   }
 }

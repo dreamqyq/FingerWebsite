@@ -12,55 +12,6 @@ body{
 	width:100%;
 	height:100vh;
 }
-#finger_header > .header{
-	position:fixed;
-	top:0px;
-	left:0px;
-	width:90%;
-	padding:40px 5%;
-	z-index:3;
-  color:#fff;
-  transition:all .5s;
-}
-#finger_header > .header.active{
-  padding:24px 5%;
-  background:#fff;
-  color:#34363F;
-  box-shadow: 0 0 3px 3px rgba(0,0,0,.2);
-}
-/*header左边的logo*/
-.header .finger_logo{
-	float:left;
-	/* width:30%; */
-  height:28px;
-}
-.header .finger_logo > img.logo{
-	height:28px;
-}
-.header .finger_logo > img.logo_text{
-	height:15px;
-	margin-left:15px;
-	vertical-align:5px;
-}
-/*header右边的nav*/
-.header .h_nav{
-	float:right;
-  line-height:28px;
-}
-.header .h_nav > ul > li{
-	float:left;
-	margin-left:35px;
-}
-.header .h_nav > ul > li > a{
-	font-size:14px;
-	color:inherit;
-}
-.header .h_nav > ul > li:nth-of-type(1) > a{
-  font-weight:bold;
-}
-.header .h_nav > ul > li > a:hover{
-  color:red;
-}
 .header_banner{
 	position:fixed;  
 	top:0px;
@@ -646,59 +597,4 @@ body{
 .banner > ul > li > .content > h2{
 	font-size:24px;
 	font-weight:normal;
-}
-
-/* footer start */
-#finger_footer{
-  position:relative;
-	width:100%;
-	background:#f7f7f7;
-}
-#finger_footer .footer{
-  padding:70px 70px;
-}
-.footer .f_logo{
-	height:28px;
-  margin-bottom:30px;
-}
-.footer .f_logo > img{
-	height:100%;
-}
-.footer .f_title{
-	height:18px;
-}
-.footer .f_title > img{
-	float:left;
-	height:100%;
-}
-.footer .f_title .icon{
-	float:right;
-	position:relative;
-}
-.footer .f_title .icon > a{
-  display:inline-block;
-  margin:0 20px;
-}
-.footer > .f_title .icon > a.first{
-  position:relative;
-}
-.footer > .f_title .icon > a.first:hover .hide{
-  display:block;
-}
-.footer .hide{
-	display:none;
-	position:absolute;
-	bottom:28px;
-	left:-40px;
-}
-.copyright{
-	width:100%;
-  padding:30px 0;
-	background:#1c1c1c;
-	text-align:center;
-	color:#6f6f6f;
-	font-size:12px;
-}
-.copyright > p{
-  margin:5px 0;
 }
