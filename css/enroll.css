@@ -1,0 +1,165 @@
+@charset "utf-8";
+body{
+	font-family: "微软雅黑";
+	color:#333;
+  width:100%;
+	height:100vh;
+  background:url("../images/bg.png.png") no-repeat center;
+  background-size:cover;
+  position:relative;
+}
+.icon{
+	width:12%;
+	top:100px;
+	left:70px;
+	position:absolute;
+}
+.mid{
+	width:100%;
+	top:30%;
+	left:0px;
+	position:absolute;
+}
+.register{
+	margin:0 auto;
+	width:700px;
+	height:70px;
+	
+}
+.register a{
+	display: inline-block;
+	width:50%;
+	height:70px;
+	float:left;
+	text-decoration:none;
+	text-align: center;
+	line-height:70px;
+}
+
+.register a span{
+	font-size:2.6em;
+	
+	margin:0 auto;       
+	
+}
+.first{
+	background-color:white;
+		color:black;
+}
+.next{
+		background-color:rgba(1,1,1,0.5);
+	color:#708090;
+}
+
+.swrap{
+	width:700px;
+	height:350px;
+	margin:0 auto;
+	background-color:cadetblue;
+	overflow: hidden;
+	
+	
+}
+.hd{
+	width:1400px;
+	height:350px;
+	background-color:red;
+	position:relative;
+}
+.content{
+	width:700px;
+	height:350px;
+	float:left;
+	background-color:white;
+}
+.include{
+	width:95%;
+	height:90%;
+	margin:2.5% auto;
+	/*background-color: darkseagreen;*/
+}
+.left{
+	width:65%;
+	height:315px;
+	float: left;
+	/*background-color:yellow;*/
+}
+.left_re{
+	width:85%;
+	height:auto
+	line-height:200px;
+	margin:0 auto;
+	/*background-color: red;*/
+	margin-top:30px;
+
+}
+.left_re li{
+	height:70px;
+	line-height:70px;	
+	/*background-color: gold;*/
+	
+}
+.left_re li input{
+	width:100%;
+	height:40px;
+	font-size:1.7em;
+}
+.button_login{
+	width:85%;
+	height:50px;
+	line-height:50px;	
+	margin:0 auto;
+	margin-top:25PX;
+
+}
+.button_login span{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	background-color: forestgreen;
+	display: inline-block;
+	font-size:2.0em;
+	text-align: center;
+	border-radius:5px;
+	color:white;	
+}
+.button_login span:hover{
+	background-color:darkseagreen
+}
+.forget{
+	width:85%;
+	height:50px;
+	line-height:50px;
+	/*background-color:greenyellow;*/
+	
+}
+.forget a{
+	color:darkgray;
+	text-decoration:none;
+	font-size:1.6em;
+	float: right;
+}
+
+.middle{
+	width:1%;
+	height:315px;
+	float: left;
+}
+.right{
+	width:34%;
+	height:315px;
+	float:right;
+	/*background-color:red;*/
+}
+.right ul{
+	width: 90%;
+	height:auto;
+	margin:0 auto;
+	/*background: burlywood;*/
+	margin-top:30px;
+}
+.right ul li{
+	width: 100%;
+	height:80px;
+	
+}
