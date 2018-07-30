@@ -24,7 +24,7 @@
     },
     // The event will only be executed once
     onceEvent : function(){
-      // 
+      // whether the event is executed
       let isExecuted = false
       return function(){
         if(!isExecuted){

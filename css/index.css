@@ -1,6 +1,6 @@
 @charset "utf-8";
 body{
-  min-width:855px;
+  min-width:898px;
 }
 .clearfix::after{
   content:'';
@@ -71,22 +71,23 @@ body{
 }
 .header_banner > ul.slideBox{
   transition:transform .5s;
-  width:300%;
+  position:absolute;
   display:flex;
+  flex:1;
 }
 .header_banner > ul > li{
-  width:100%;
+  width:100vw;
 	height:100vh;
 }
-.header_banner > ul > li:nth-of-type(1){
+.header_banner > ul > li.slide_first{
 	background:url("../images/website-banner1.jpg") no-repeat center;
 	background-size:cover;
 }
-.header_banner > ul > li:nth-of-type(2){
+.header_banner > ul > li.slide_second{
 	background:url("../images/website-banner2.jpg") no-repeat center;
 	background-size:cover;
 }
-.header_banner > ul > li:nth-of-type(3){
+.header_banner > ul > li.slide_third{
 	background:url("../images/website-banner3.jpg") no-repeat center;
 	background-size:cover;
 }
@@ -458,7 +459,8 @@ body{
 
 /*时间训练*/
 .finger_stytime{
-  width:90%;
+  width:95%;
+  max-width:1260px;
   height:270px;
 	margin:-20px auto 0;
 }
@@ -593,13 +595,11 @@ body{
 	position:absolute;
 	top:0px;
   display:flex;
-	width:3060px;
 	height:100%;
   transition:transform .5s;
 }
 .banner > ul > li{
 	position:relative;
-	float:left;	
 	width:1020px;	
 	height:700px;
 }
