@@ -38,9 +38,7 @@ body{
 
 .register a span{
 	font-size:2.6em;
-	
 	margin:0 auto;       
-	
 }
 .first{
 	background-color:white;
@@ -57,14 +55,13 @@ body{
 	margin:0 auto;
 	background-color:cadetblue;
 	overflow: hidden;
-	
-	
 }
 .hd{
 	width:1400px;
 	height:350px;
 	background-color:red;
 	position:relative;
+  transition:transform .4s;
 }
 .content{
 	width:700px;
@@ -76,28 +73,23 @@ body{
 	width:95%;
 	height:90%;
 	margin:2.5% auto;
-	/*background-color: darkseagreen;*/
 }
 .left{
 	width:65%;
 	height:315px;
 	float: left;
-	/*background-color:yellow;*/
+  position:relative;
 }
 .left_re{
 	width:85%;
 	height:auto
 	line-height:200px;
 	margin:0 auto;
-	/*background-color: red;*/
 	margin-top:30px;
-
 }
 .left_re li{
 	height:70px;
 	line-height:70px;	
-	/*background-color: gold;*/
-	
 }
 .left_re li input{
 	width:100%;
@@ -130,8 +122,6 @@ body{
 	width:85%;
 	height:50px;
 	line-height:50px;
-	/*background-color:greenyellow;*/
-	
 }
 .forget a{
 	color:darkgray;
@@ -139,23 +129,35 @@ body{
 	font-size:1.6em;
 	float: right;
 }
-
-.middle{
-	width:1%;
-	height:315px;
-	float: left;
+.left::after {
+    content: '';
+    height: 100%;
+    position:absolute;
+    top:0;
+    left:97.5%;
+    vertical-align: middle;
+    border-right: 1px solid #aaa;
+}
+.left::before{
+  content:'或';
+  position:absolute;
+  color:#aaa;
+  line-height:40px;
+  margin-top:-20px;
+  left:96%;
+  top:50%;
+  background:#fff;
+  z-index:2;
 }
 .right{
 	width:34%;
 	height:315px;
 	float:right;
-	/*background-color:red;*/
 }
 .right ul{
 	width: 90%;
 	height:auto;
 	margin:0 auto;
-	/*background: burlywood;*/
 	margin-top:30px;
 }
 .right ul li{
