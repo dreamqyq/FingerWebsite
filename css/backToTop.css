@@ -1,0 +1,29 @@
+.ui-top {
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius:50%;
+  background: #888 url("../images/icon-go-up.png") no-repeat center;
+  position: fixed;
+  right: 10px;
+  bottom: 80px;
+  font-size: 14px;
+  text-align: center;
+  transition:all .3s;
+  transform:translateX(130%);
+}
+
+.ui-top.active {
+  transform:translateX(0);
+}
+
+.ui-top:hover {
+  background-image:none;
+  background-color: #888;
+}
+
+.ui-top:hover::after {
+  color: #fff;
+  content: '返回顶部';
+  display: block;
+}
